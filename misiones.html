@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Misiones Espaciales</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos-misiones.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container-fluid nopadding">
+      <header>
+        <span class="glyphicon glyphicon-menu-right" id="abrir"></span>
+        <span class="glyphicon glyphicon-menu-left" id="cerrar"></span>
+        <h1>MISIONES</h1>
+        <img src="historia-materiales/cohete.png" class="cohete" alt="">
+        <nav>
+          <a href="#"><span></span>INICIO</a>
+          <a href="#"><span></span>HISTORIA</a>
+          <a href="#"><span></span>GALERÍAS</a>
+          <a href="#"><span></span>CONTACTO</a>
+        </nav>
+        <footer class="hidden-xs hidden-sm visible-md visible-lg">
+          <img src="img/nasa-logo.png" alt="">
+          <p>Copyright (c) 2016 Copyright Holder All Rights Reserved.</p>
+        </footer>
+      </header>
+      <section>
+        <div id="slidercin" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#slidercin" data-slide-to="0" class="active"></li>
+            <li data-target="#slidercin" data-slide-to="1"></li>
+            <li data-target="#slidercin" data-slide-to="2"></li>
+            <li data-target="#slidercin" data-slide-to="3"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="misiones-materiales/slider/wall1.jpg" alt="">
+              <div class="carousel-caption">
+                <p>Apollo 11</p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="misiones-materiales/slider/wall2.jpg" alt="">
+              <div class="carousel-caption">
+                <p>Buzz Aldrin</p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="misiones-materiales/slider/wall3.jpg" alt="">
+              <div class="carousel-caption">
+                <p>Pisada de Buzz Aldrin</p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="misiones-materiales/slider/wall4.jpg" alt="">
+              <div class="carousel-caption">
+                <p>Control de misión</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#slidercin" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#slidercin" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>
+      </section>
+      <section class="container">
+        <article class="col-xs-12 col-md-6">
+            <h2>Apollo 11</h2>
+            <h3>1969</h3>
+        </article>
+        <article class="col-xs-12 col-md-6 timeline" id="apollo11">
+          <div class="cuadro">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
+            <button id="btn1">Tripulación</button>
+            <button id="btn2">Detalles</button>
+          </div>
+          <div class="box">
+            <div class="cuadro" id="trip11">
+              <span class="glyphicon glyphicon-remove"></span>
+              <figure class="col-xs-12 col-md-4">
+                <img src="misiones-materiales/apollo-11-armstrong.png" alt="" />
+                <h4>Neil Armstrong</h4>
+                <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</figcaption>
+              </figure>
+              <figure class="col-xs-12 col-md-4">
+                <img src="misiones-materiales/apollo-11-aldrin.png" alt="" />
+                <h4>Buzz Aldrin</h4>
+                <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</figcaption>
+              </figure>
+              <figure class="col-xs-12 col-md-4">
+                <img src="misiones-materiales/apollo-11-collins.png" alt="" />
+                <h4>Michael Collins</h4>
+                <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</figcaption>
+              </figure>
+              <div style="clear:both;"></div>
+            </div>
+            <div class="cuadro" id="det11">
+              <span class="glyphicon glyphicon-remove"></span>
+              Detalles
+            </div>
+          </div>
+        </article>
+        <article class="col-xs-12 col-md-6" id="apollo13">
+          <div class="cuadro">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
+            <button id="btn1">Tripulación</button>
+            <button id="btn2">Detalles</button>
+          </div>
+          <div class="box">
+            <div class="cuadro" id="trip13">
+              <span class="glyphicon glyphicon-remove"></span>
+              Tripulación
+            </div>
+            <div class="cuadro" id="det13">
+              <span class="glyphicon glyphicon-remove"></span>
+              Detalles
+            </div>
+          </div>
+        </article>
+        <article class="col-xs-12 col-md-6 timeline">
+            <h2 style="text-align:left;">Apollo 13</h2>
+            <h3 style="text-align:left;">1971</h3>
+        </article>
+        <article class="col-xs-12 col-md-6">
+            <h2>Skylab</h2>
+            <h3>1973</h3>
+        </article>
+        <article class="col-xs-12 col-md-6 timeline" id="skylab">
+          <div class="cuadro">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
+            <button id="btn1">Tripulación</button>
+            <button id="btn2">Detalles</button>
+          </div>
+          <div class="box">
+            <div class="cuadro" id="tripSkl">
+              <span class="glyphicon glyphicon-remove"></span>
+              Tripulación
+            </div>
+            <div class="cuadro" id="detSkl">
+              <span class="glyphicon glyphicon-remove"></span>
+              Detalles
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      // Variables Menú
+      var hdr = $('header');
+      var opn = $('span#abrir');
+      var cls = $('span#cerrar');
+      var out = $('article, section, div');
+      // Variables Botones
+      var box = $('div.box');
+      var equis = $('div.box span');
+      // Apollo11
+      var box1 = $('article#apollo11 div.box');
+      var t11 = $('article#apollo11 #btn1');
+      var d11 = $('article#apollo11 #btn2');
+      // Apollo13
+      var box2 = $('article#apollo13 div.box');
+      var t13 = $('article#apollo13 #btn1');
+      var d13 = $('article#apollo13 #btn2');
+      // Skylab
+      var box3 = $('article#skylab div.box');
+      var tsk = $('article#skylab #btn1');
+      var dsk = $('article#skylab #btn2');
+      // Funciones
+
+      opn.click(function(){
+        hdr.animate({
+          'left':'0'
+        });
+        opn.addClass('adios');
+        cls.addClass('hola');
+      });
+      cls.click(function(){
+        hdr.animate({
+          'left':'-320px'
+        });
+        opn.removeClass('adios')
+        cls.removeClass('hola')
+      });
+      // Funciones botones
+      $.merge(equis, box).click(function(){
+        box1.animate({'z-index':'-300','opacity':'0',});
+        box2.animate({'z-index':'-300','opacity':'0',});
+        box3.animate({'z-index':'-300','opacity':'0',});
+        $('div.box div').css({'display':'none'});
+        $('body').css({'overflow':'auto'});
+      });
+      // Funciones Apollo11
+      t11.click(function(){
+        box1.animate({'z-index':'300','opacity':'1',});
+        $('div#trip11').show();
+        $('body').css({'overflow':'hidden'});
+      });
+      d11.click(function(){
+        box1.animate({'z-index':'300','opacity':'1',});
+        $('div#det11').show();
+        $('body').css({'overflow':'hidden'});
+      });
+      // Funciones Apollo13
+      t13.click(function(){
+        box2.animate({'z-index':'300','opacity':'1',});
+        $('div#trip13').show();
+        $('body').css({'overflow':'hidden'});
+      });
+      d13.click(function(){
+        box2.animate({'z-index':'300','opacity':'1',});
+        $('div#det13').show();
+        $('body').css({'overflow':'hidden'});
+      });
+      // Funciones Skylab
+      tsk.click(function(){
+        box3.animate({'z-index':'300','opacity':'1',});
+        $('div#tripSkl').show();
+        $('body').css({'overflow':'hidden'});
+      });
+      dsk.click(function(){
+        box3.animate({'z-index':'300','opacity':'1',});
+        $('div#detSkl').show();
+        $('body').css({'overflow':'hidden'});
+      });
+
+    </script>
+  </body>
+</html>

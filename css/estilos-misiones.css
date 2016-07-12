@@ -1,0 +1,289 @@
+@charset "UTF-8";
+
+.nopadding {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+body {
+  background-color: rgb(23, 23, 23);
+  background-image: url(../historia-materiales/montana.png), url(../misiones-materiales/nightclouds.jpg);
+  background-repeat:repeat-x, no-repeat;
+  background-size:auto, cover;
+  background-attachment: fixed, scroll;
+  background-position:0 550px, 0 -150px;
+}
+
+header {
+  background-image: url(../misiones-materiales/patron.jpg);
+  width: 320px;
+  left: -320px;
+  position: fixed;
+  min-height: 100%;
+  padding: 40px 0;
+  border-right: 1px solid #fff;
+  z-index: 301;
+}
+h1 {
+  text-align: center;
+  font-weight: 100;
+  letter-spacing: 2px;
+  font-size: 3.4em;
+  color: #fff;
+}
+header img.cohete {
+  display: block;
+  width: 90%;
+  height: auto;
+  margin:30px auto;
+}
+nav {
+  position: relative;
+  top: 10px;
+}
+nav a {
+  display: block;
+  width: 96%;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  margin: auto;
+  text-indent: 5px;
+  position: relative;
+  left: -40px;
+  transition: all .5s ease;
+}
+
+nav span {
+  background-image: url(../img/flecha-d.png);
+  background-size:30%;
+  background-repeat: no-repeat;
+  background-position:left;
+  display: block;
+  width: 40px;
+  height: 40px;
+  float: left;
+  opacity: 0;
+  transition: all .5s ease-out;
+}
+
+nav a:hover span {
+  background-position: center;
+  opacity: 1;
+}
+nav a:hover {
+  left: 0px;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: .001em solid #fff;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+}
+footer img {
+  display: block;
+  width: 50%;
+  margin: 10px auto;
+}
+footer p {
+  text-align: center;
+  color: #fff;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+span#abrir, span#cerrar {
+  background-color: #fff;
+  color: #000;
+  padding: 8px;
+  text-align: center;
+  font-size: 1.6em;
+  position: absolute;
+  cursor: pointer;
+}
+
+span#abrir {
+  top: 22px;
+  left: 320px;
+  border-radius: 0 6px 6px 0;
+}
+span#cerrar {
+  top: 22px;
+  right:0;
+  border-radius: 6px 0 0 6px;
+  -webkit-transform:rotateY(90deg);
+}
+
+.adios {
+  -webkit-transform-origin:left center;
+  -webkit-animation-name:bye;
+  -webkit-animation-duration:.5s;
+  -webkit-animation-iteration-count:1;
+  -webkit-animation-delay:.5s;
+  -webkit-animation-fill-mode:forwards;
+}
+@-webkit-keyframes bye {
+  from {-webkit-transform:rotateY(0deg);}
+    to {-webkit-transform:rotateY(90deg);}
+}
+.hola {
+  -webkit-transform-origin:right center;
+  -webkit-animation-name:hi;
+  -webkit-animation-duration:.5s;
+  -webkit-animation-iteration-count:1;
+  -webkit-animation-delay:.5s;
+  -webkit-animation-fill-mode:forwards;
+}
+
+@-webkit-keyframes hi {
+  from {-webkit-transform:rotateY(90deg);}
+    to {-webkit-transform:rotateY(0deg);}
+}
+
+div#slidercin img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+ol.carousel-indicators {
+  display: none;
+}
+
+div.carousel-caption {
+  width: 100% !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  background-color:rgba(0, 0, 0, 0.42);
+  line-height: 50px;
+  padding: 0;
+}
+
+div.carousel-caption p {
+  color:#fff;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 100;
+  margin: 0;
+  text-shadow: none;
+  letter-spacing: 2px;
+}
+
+article {
+  padding-left:30px !important;
+  padding-right:30px !important;
+  padding-bottom:30px;
+  padding-top:30px;
+  height: 300px;
+  text-align: justify;
+}
+
+article div.cuadro{
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: #fff 0px 0px 16px;
+  padding: 20px;
+}
+.cosa {
+  height: 300px;
+}
+.timeline {
+  border-left: 2px solid #fff;
+}
+
+article button {
+  background-color: rgb(23, 23, 23);
+  color: #fff;
+  border: none;
+  padding: 6px 14px;
+  margin-top: 10px;
+  border-radius: 2px;
+}
+
+article h2, article h3 {
+  color: #fff;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: right;
+  margin: 0;
+}
+
+
+div.box {
+  position: fixed;
+  z-index: -300;
+  opacity: 0;
+  background-color:rgba(23, 23, 23, 0.6);
+  top:0;
+  left:0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+div.box div {
+  position: relative;
+  top: 150px;
+  overflow: hidden;
+  margin: auto;
+  width: 90%;
+  min-width: 300px;
+  max-width: 700px;
+  display: none;
+  max-height: 500px;
+  overflow:auto;
+}
+
+div.box span {
+  padding: 8px;
+  background-color: #000;
+  color: #fff;
+  position:absolute;
+  right: 0;
+  top: 0;
+  border-radius:0 12px 0 0;
+}
+
+div.box figure {
+  margin: 10px 0;
+}
+div.box figure img {
+  display: block;
+  width: 80%;
+  max-width: 300px;
+  height: auto;
+  margin: auto;
+}
+div.box h4 {
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 40px;
+  border-bottom: 2px solid #000;
+}
+
+/*Barra*/
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+
+@media screen and (max-width:767px) {
+  div.box div {
+    top: 70px;
+  }
+}
+
+@media screen and (max-width:767px) and (orientation:landscape) {
+  div.box div {
+    top:10px;
+    max-height: 300px;
+    max-width: 450px;
+  }
+}

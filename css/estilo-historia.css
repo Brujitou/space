@@ -1,0 +1,289 @@
+@charset "UTF-8";
+
+/*
+  1vh = viewport height
+  1vw = viewport width
+*/
+
+
+body {
+  background-color: rgb(23, 23, 23);
+  padding-top: 500px;
+}
+
+
+.nopadding {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+header {
+  background-image: url(../historia-materiales/slide3.jpg);
+  background-size: cover;
+  background-position:center;
+  height: 500px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index:-101;
+}
+
+
+
+h1, h2 {
+  text-align: center;
+  color:#fff;
+  font-weight: 100;
+  position: relative;
+}
+h1 {font-size:8vh; top: 200px;}
+h2 {top: 50px;}
+
+nav {
+  height: 50px;
+  position: relative;
+  background-color: rgb(23, 23, 23);
+}
+
+.fijo {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+nav img {
+  position: relative;
+  display: block;
+  width: 110px;
+  height: auto;
+  margin: auto;
+  top: 50px;
+}
+nav div#desktop {
+  position: relative;
+  top:-111px;
+}
+
+nav div#desktop a {
+  display: block;
+  width:25%;
+  height:50px;
+  line-height:50px;
+  float: left;
+  text-align: center;
+  background-image: url(../img/estrellitas.png);
+  background-position: top;
+  transition: all 2s linear;
+}
+
+nav div#desktop a:hover {
+  background-position:bottom;
+}
+
+nav div#mobile {
+  min-width:320px;
+  max-width:600px;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 50px;
+  z-index: 10;
+  height: 0px;
+  overflow: hidden;
+  transition: all .5s;
+}
+nav div#mobile a {
+  display: block;
+  line-height: 50px;
+  height: 50px;
+  color: #fff;
+  background-color: #000;
+  text-align: right;
+  padding-right: 10px;
+  border-bottom: 1px solid #fff;
+}
+nav div#mobile a:hover {
+  background-color: rgb(23, 23, 23);
+}
+nav span {
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px !important;
+  text-align: center;
+  color: #000;
+  font-size: 1.4em;
+  background-color: #fff;
+  position: absolute !important;
+  top: 0 !important;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+nav span:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+span#abrir { z-index: 10;}
+span#cerrar { z-index: 9;}
+
+article blockquote {
+  border: none;
+  text-align: center;
+  font-style: italic;
+  font-size: 2em;
+  font-weight: 200;
+  color:rgb(116, 116, 116);
+  margin: 40px 0;
+  padding: 0;
+}
+
+article {
+  background-color: #fff;
+  padding: 40px 0;
+  text-align: justify;
+}
+
+article h3 {
+  border-bottom: 1px solid rgb(24, 24, 24);
+  font-weight: 200;
+}
+article#art1 button {
+  margin: 40px auto 0;
+  border: 1px solid #000;
+  background-color: rgb(23, 23, 23);
+  color: #fff;
+  border-radius: 2px;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+div.parallax {
+  background:transparent;
+  min-height: 400px;
+}
+
+div#accordion img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+div#accordion a {
+  display: block;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+div#accordion .panel-heading {
+  background-color: rgb(23, 23, 23);
+  color: #fff;
+}
+
+article#art2 #satelite {
+  display: block;
+  width: 80%;
+  height: auto;
+  margin:80px auto;
+  -webkit-animation-name:sat;
+  -webkit-animation-duration:20s;
+  -webkit-animation-direction:alternate;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-timing-function:ease-in-out;
+}
+@-webkit-keyframes sat {
+  25% {-webkit-transform:translate(50px,0) rotate(30deg);}
+  50% {-webkit-transform:translate(50px,50px) rotate(20deg);}
+  75% {-webkit-transform:translate(0px,50px) rotate(-10deg);}
+  100% {-webkit-transform:translate(0px,0px);}
+}
+
+article#art3 img {
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+
+.ui-widget-header {
+  background-color: rgb(23, 23, 23);
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+  background-color: rgb(87, 87, 87);
+  border: 1px solid #000;
+}
+
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+  padding: .73em !important;
+}
+
+footer {
+  background-color: rgb(23, 23, 23);
+  padding: 60px 0;
+}
+
+footer #logo {
+  display: block;
+  margin: auto;
+  width: 120px;
+}
+div#social {
+  width: 300px;
+  margin: 30px auto;
+  height: 90px;
+}
+div#social img {
+  display: block;
+  float: left;
+  width: 25%;
+  height: auto;
+}
+
+div#videito {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+video {
+  min-width: 100%;
+  position: relative;
+  min-height: 400px;
+  top: -200px;
+}
+
+div#videito span {
+  position: absolute;
+  color: #fff;
+  top: auto !important;
+  bottom: 10px;
+  left:10px;
+  z-index: 100;
+  display: block;
+  cursor: pointer;
+  border: 1px solid #fff;
+  padding: 6px;
+  border-radius: 2px;
+}
+
+span#fullscreen {
+  z-index: 10;
+}
+span#close {
+    z-index: 9 !important;
+}
+
+.close {
+  display: none !important;
+}
+
+
+footer p {
+  color: rgb(82, 82, 82);
+  text-align: center;
+  clear: both;
+  text-transform: uppercase;
+  font-weight: 200;
+}
